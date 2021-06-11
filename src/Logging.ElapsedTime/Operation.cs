@@ -45,7 +45,7 @@ namespace Extensions.Logging.ElapsedTime
 
         const string OutcomeCompleted = "completed", OutcomeAbandoned = "abandoned";
         
-        const string OutcomeOk = "OK", OutcomeKo = "Error";
+        const string OutcomeOk = "Ok", OutcomeKo = "Ko";
 
         ILogger _target;
         readonly string _messageTemplate;
@@ -114,7 +114,7 @@ namespace Extensions.Logging.ElapsedTime
             if (_completionBehaviour == CompletionBehaviour.Silent)
                 return;
 
-            Write(_target, _completionLevel, isSuccess ? OutcomeOk : OutcomeKo);
+            Write(_target, isSuccess ? _completionLevel : _abandonmentLevel, isSuccess ? OutcomeOk : OutcomeKo);
         }
 
         /// <summary>

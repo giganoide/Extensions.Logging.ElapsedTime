@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging.ElapsedTime", "src\Logging.ElapsedTime\Logging.ElapsedTime.csproj", "{1C11C01E-6B6D-4C3E-9214-D87AE18E2347}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logging.ElapsedTime", "src\Logging.ElapsedTime\Logging.ElapsedTime.csproj", "{1C11C01E-6B6D-4C3E-9214-D87AE18E2347}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "Examples\Examples.csproj", "{FAD2828C-06BD-4946-B4CB-8F1BEA3BCBD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1C11C01E-6B6D-4C3E-9214-D87AE18E2347}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C11C01E-6B6D-4C3E-9214-D87AE18E2347}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C11C01E-6B6D-4C3E-9214-D87AE18E2347}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD2828C-06BD-4946-B4CB-8F1BEA3BCBD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD2828C-06BD-4946-B4CB-8F1BEA3BCBD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD2828C-06BD-4946-B4CB-8F1BEA3BCBD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD2828C-06BD-4946-B4CB-8F1BEA3BCBD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
