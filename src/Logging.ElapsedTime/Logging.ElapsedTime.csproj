@@ -14,7 +14,7 @@
     <Product>Extensions.Logging.ElapsedTime</Product>
     <Description>Extends Microsoft.Extensions.Logging.ILogger with timed operations</Description>
     <PackageIcon>Extensions.Logging.ElapsedTime.png</PackageIcon>
-    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <PackageLicenseFile>License</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
