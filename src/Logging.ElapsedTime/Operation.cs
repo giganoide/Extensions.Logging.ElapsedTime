@@ -44,6 +44,8 @@ namespace Extensions.Logging.ElapsedTime
         };
 
         const string OutcomeCompleted = "completed", OutcomeAbandoned = "abandoned";
+        
+        const string OutcomeOk = "OK", OutcomeKo = "Error";
 
         ILogger _target;
         readonly string _messageTemplate;
@@ -101,7 +103,20 @@ namespace Extensions.Logging.ElapsedTime
 
             Write(_target, _completionLevel, OutcomeCompleted);
         }
-        
+
+        /// <summary>
+        /// Complete the timed operation. This will write the event, the elapsed time and the result of the operation to the log.
+        /// </summary>
+        public void Complete(bool isSuccess)
+        {
+            _stopwatch.Stop();
+
+            if (_completionBehaviour == CompletionBehaviour.Silent)
+                return;
+
+            Write(_target, _completionLevel, isSuccess ? OutcomeOk : OutcomeKo);
+        }
+
         /// <summary>
         /// Abandon the timed operation. This will write the event and elapsed time to the log.
         /// </summary>
